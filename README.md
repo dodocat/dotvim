@@ -9,7 +9,7 @@
 
 然后执行
 `` 
-cp dotvim/ ~/.vim
+cp -r dotvim/ ~/.vim
 cd ~/.vim
 ln -s ~/.vimrc .vimrc
 ```
