@@ -20,6 +20,7 @@ Bundle "honza/vim-snippets"
 Bundle "peterhoeg/vim-qml"
 Bundle "vim-scripts/Visual-Mark"
 Bundle "vim-scripts/sketch.vim"
+Bundle "vim-scripts/a.vim"
 
 "包含其它文件
 ""快捷键设定文件 
