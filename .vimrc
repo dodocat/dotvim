@@ -1,14 +1,8 @@
 "去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限
 set nocp
-
-" 2013-7-10 vim-pathogen
-"execute pathogen#infect()
-
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
-
-"" 
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
