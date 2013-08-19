@@ -44,8 +44,6 @@ nmap wm :WMToggle<cr>
 
 :set cscopequickfix=s-,c-,d-,i-,t-,e-
 
-"nnoremap <silent> <F3> :Grep<CR>
-
 "检测文件的类型 开启codesnip
 "filetype on
 filetype plugin on
@@ -131,11 +129,7 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
-"set tags+=/home/hunch/.vim/sgitag
-"set tags+=/home/hunch/.vim/ctags
-"set tags+=/home/hunch/.vim/glibctag
 "智能补全ctags -R --c++-kinds=+p --fields=+iaS --extra=+q 
-"
 
 highlight Pmenu ctermbg=13 guibg=LightGray
 highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
