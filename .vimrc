@@ -17,7 +17,7 @@ Bundle "vim-scripts/sketch.vim"
 Bundle "vim-scripts/a.vim"
 Bundle "hallison/vim-markdown"
 Bundle "altercation/vim-colors-solarized"
-""Bundle "davidhalter/jedi-vim"
+Bundle "davidhalter/jedi-vim"
 "包含其它文件
 ""快捷键设定文件 
 source $HOME/.vim/rcfile/mappings.vim
@@ -51,8 +51,8 @@ filetype indent on
 filetype plugin indent on
 
 "设置为语法补全
-set ofu=syntaxcomplete#Complete
-set completeopt=longest,menu
+""set ofu=syntaxcomplete#Complete
+""set completeopt=longest,menu
 
 "鼠标支持
 if has('mouse')
@@ -107,8 +107,8 @@ endif
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+""au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+""set completeopt=menuone,menu,longest,preview
 
 ""highlight Pmenu ctermbg=13 guibg=LightGray
 ""highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
