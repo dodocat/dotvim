@@ -43,7 +43,7 @@ let Tlist_Exit_OnlyWindow=1
 let g:winManagerWindowLayout='FileExplorer|TagList'
 nmap wm :WMToggle<cr>
 
-:set cscopequickfix=s-,c-,d-,i-,t-,e-
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 "检测文件的类型 开启codesnip
 "filetype on
@@ -64,16 +64,14 @@ endif
 " 若 encoding 为 utf-8，gvim 显示全角符号时就会
 " 出问题，会当作半角显示。
 set ambiwidth=double       
-set autoread                " 自动重新加载外部修改内容
-set autochdir               " 自动切换当前目录为当前文件所在的目录 
+set autoread " 自动重新加载外部修改内容
+set autochdir " 自动切换当前目录为当前文件所在的目录 
 
-"No bell settings {{{
 set noerrorbells
 set visualbell
 if has('autocmd')
    autocmd GUIEnter * set vb t_vb=
 endif
-"No bell settings End }}}
 
 "默认无备份
 set nobackup
@@ -96,11 +94,6 @@ set ai
 set ic
 "标识关键字
 set hls
-
-"设置帮助语言
-if version >= 603
-   set helplang=cn
-endif
 
 "自动回到最后编辑的位置
 if has("autocmd")
