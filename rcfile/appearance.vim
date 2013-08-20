@@ -12,17 +12,12 @@ if !exists("g:vimrc_loaded")
     " color scheme
     if has("gui_running")
         set guioptions-=T "隐藏工具栏
-        " set guioptions-=m
-        " set guioptions-=L
-        " set guioptions-=r
-        colorscheme fruit
-        set guifont=YaHeiConsolasHybrid\ 10 
-        "hi normal guibg=#294d4a
+        set background=light
     else
-        colorscheme desertEx
-    endif 
+        set background=dark
+    endif
+    colorscheme solarized
 endif
-"set background=dark
 
 " Line highlight 設此是游標整行會標註顏色
 set cursorline
