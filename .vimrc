@@ -108,14 +108,11 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 :vnoremap <silent> ,/ y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR> 
 :vnoremap <silent> ,? y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 
-"valgrind 相关
-let g:valgrind_arguments='--leak-check=yes --num-callers=5000'
-
 " bind :CD to :cd %:h, then change cwd to the dir that includes current file
 sil! com -nargs=0 CD exe 'cd %:h' 
 
 "字典完成
-:set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words 
+:set dictionary+=/usr/share/dict/words 
 
 "cscope
 if has("cscope")
