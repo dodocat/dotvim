@@ -108,24 +108,6 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 :vnoremap <silent> ,/ y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR> 
 :vnoremap <silent> ,? y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 
-"rails.vim
-runtime! macros/matchit.vim
-augroup myfiletypes
-   " Clear old autocmds in group
-   autocmd!
-   " autoindent with two spaces, always expand tabs
-   autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
-augroup END
-
-"autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete 
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-"if you want buffer/rails/global completion you must add the following:
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-"if you want rails support add the following in addition 
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-"if you want classes included in global completions add the following  
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-
 "valgrind 相关
 let g:valgrind_arguments='--leak-check=yes --num-callers=5000'
 
