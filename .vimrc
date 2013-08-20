@@ -17,6 +17,7 @@ Bundle "vim-scripts/sketch.vim"
 Bundle "vim-scripts/a.vim"
 Bundle "hallison/vim-markdown"
 Bundle "altercation/vim-colors-solarized"
+""Bundle "davidhalter/jedi-vim"
 "包含其它文件
 ""快捷键设定文件 
 source $HOME/.vim/rcfile/mappings.vim
@@ -109,12 +110,10 @@ map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
-"智能补全ctags -R --c++-kinds=+p --fields=+iaS --extra=+q 
-
-highlight Pmenu ctermbg=13 guibg=LightGray
-highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-highlight PmenuSbar ctermbg=7 guibg=DarkGray
-highlight PmenuThumb guibg=Black
+""highlight Pmenu ctermbg=13 guibg=LightGray
+""highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
+""highlight PmenuSbar ctermbg=7 guibg=DarkGray
+""highlight PmenuThumb guibg=Black
 "打开自己工程的时候自动加载的脚本
 if getfsize(".vimscript")>0
    source .vimscript
