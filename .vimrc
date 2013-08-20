@@ -17,7 +17,8 @@ Bundle "vim-scripts/sketch.vim"
 Bundle "vim-scripts/a.vim"
 Bundle "hallison/vim-markdown"
 Bundle "altercation/vim-colors-solarized"
-Bundle "davidhalter/jedi-vim"
+""'Bundle "davidhalter/jedi-vim"
+Bundle "Valloric/YouCompleteMe"
 "包含其它文件
 ""快捷键设定文件 
 source $HOME/.vim/rcfile/mappings.vim
