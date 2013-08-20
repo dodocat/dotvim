@@ -95,17 +95,6 @@ if has("autocmd")
             \ endif
 endif
 
-" build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
-" automatically open and close the popup menu / preview window
-""au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-""set completeopt=menuone,menu,longest,preview
-
-""highlight Pmenu ctermbg=13 guibg=LightGray
-""highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-""highlight PmenuSbar ctermbg=7 guibg=DarkGray
-""highlight PmenuThumb guibg=Black
 "打开自己工程的时候自动加载的脚本
 if getfsize(".vimscript")>0
    source .vimscript
