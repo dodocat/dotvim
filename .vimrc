@@ -50,19 +50,11 @@ filetype plugin on
 filetype indent on
 filetype plugin indent on
 
-"设置为语法补全
-""set ofu=syntaxcomplete#Complete
-""set completeopt=longest,menu
-
 "鼠标支持
 if has('mouse')
    set mouse=a
 endif
 
-" ambiwidth 默认值为 single。在其值为 single 时，
-" 若 encoding 为 utf-8，gvim 显示全角符号时就会
-" 出问题，会当作半角显示。
-set ambiwidth=double       
 set autoread " 自动重新加载外部修改内容
 set autochdir " 自动切换当前目录为当前文件所在的目录 
 
