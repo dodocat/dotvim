@@ -27,12 +27,12 @@ source $HOME/.vim/rcfile/function.vim
 source $HOME/.vim/rcfile/fileheader.vim
 
 "设置语法折叠
-set foldmethod=syntax
-set foldcolumn=3 "设置折叠区域的宽度
+""set foldmethod=syntax
+""set foldcolumn=3 "设置折叠区域的宽度
 "set foldclose=all "设置为自动关闭折叠
 " 用空格键来开关折叠
-set foldenable
-nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+""set foldenable
+""nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 "Tlist 和 wm的设置
 "命令模式输入wm打开Tlist和WM
