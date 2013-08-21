@@ -17,7 +17,8 @@ Bundle "vim-scripts/sketch.vim"
 Bundle "vim-scripts/a.vim"
 Bundle "hallison/vim-markdown"
 Bundle "altercation/vim-colors-solarized"
-Bundle "davidhalter/jedi-vim"
+""'Bundle "davidhalter/jedi-vim"
+Bundle "Valloric/YouCompleteMe"
 Bundle "Rainbow-Parentheses-Improved-and2"
 
 ""激活 Rainbow Parentheses
