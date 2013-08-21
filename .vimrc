@@ -18,6 +18,13 @@ Bundle "vim-scripts/a.vim"
 Bundle "hallison/vim-markdown"
 Bundle "altercation/vim-colors-solarized"
 Bundle "davidhalter/jedi-vim"
+Bundle "Rainbow-Parentheses-Improved-and2"
+
+""激活 Rainbow Parentheses
+"""" colorfull ((((()))))
+let g:rainbow_active = 1 
+let g:rainbow_operators = 1 
+
 "包含其它文件
 ""快捷键设定文件 
 source $HOME/.vim/rcfile/mappings.vim
