@@ -12,7 +12,7 @@ if !exists("g:vimrc_loaded")
     " color scheme
     if has("gui_running")
         set guioptions-=T "隐藏工具栏
-        set guifont=Monaco\ 16
+        set guifont=Monaco\ 12
         set background=light
     else
         set background=dark
