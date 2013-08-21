@@ -20,6 +20,8 @@ Bundle "altercation/vim-colors-solarized"
 ""'Bundle "davidhalter/jedi-vim"
 Bundle "Valloric/YouCompleteMe"
 Bundle "Rainbow-Parentheses-Improved-and2"
+Bundle "groovy.vim"
+Bundle "tfnico/vim-gradle"
 
 ""激活 Rainbow Parentheses
 """" colorfull ((((()))))
