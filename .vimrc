@@ -24,6 +24,21 @@ Bundle "tfnico/vim-gradle"
 
 ""激活 Rainbow Parentheses
 """" colorfull ((((()))))
+
+
+" read file vim73/rgb.txt for all named colors
+"" TODO fixme 
+let s:guifgs = exists('g:rainbow_guifgs')? g:rainbow_guifgs : [
+			\ 'RoyalBlue3', 'DarkOrange3', 'SeaGreen3', 'FireBrick',
+			\ ]
+			"\ 'DarkOrchid3', 'RoyalBlue3', 'SeaGreen3',
+			"\ 'DarkOrange3', 'FireBrick', 
+
+let s:ctermfgs = exists('g:rainbow_ctermfgs')? g:rainbow_ctermfgs : [
+			\ 'gray', 'blue', 'magenta',
+			\ 'cyan', 'red', 'green',
+			\ ]
+
 let g:rainbow_active = 1 
 let g:rainbow_operators = 1 
 
@@ -78,7 +93,7 @@ set nobackup
 set nowritebackup
 
 "在insert模式下能用删除键进行删除
-set backspace=indent,eol,start
+set backspace=start,indent,eol
 
 "文字编码加入utf8
 set enc=utf8
