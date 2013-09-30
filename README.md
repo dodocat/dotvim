@@ -1,4 +1,4 @@
-# 我的的 vim 配置
+# 我的 vim 配置
 
 ## Overview
 使用 Vundle 管理插件, .vimrc 和 rcfiles/ 里包含了一些特色配置.
