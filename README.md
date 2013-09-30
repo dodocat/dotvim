@@ -3,7 +3,7 @@
 ## Overview
 使用 Vundle 管理插件, .vimrc 和 rcfiles/ 里包含了一些特色配置.
 
-## 安装
+## Install
 
 ``` bash
 git clone git@github.com:dodocat/dotvim.git .vim
