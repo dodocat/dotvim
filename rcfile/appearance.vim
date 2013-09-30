@@ -4,12 +4,10 @@
 "
 "------------------------------------------------
 
-"配色
 " Avoid clearing hilight definition in plugins
 if !exists("g:vimrc_loaded")
     "Enable syntax hl
     syntax enable
-    " color scheme
     if has("gui_running")
         set guioptions-=T "隐藏工具栏
         set guifont=Monaco\ 12
@@ -35,12 +33,7 @@ set nu
 "缩进相关
 set autoindent
 set cindent
-set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
-if &term=="xterm"
-    set t_Co=8
-    set t_Sb=^[[4%dm
-    set t_Sf=^[[3%dm
-endif
+""set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
 set expandtab 
 set tabstop=4  
 set shiftwidth=4 
@@ -54,7 +47,7 @@ set nolinebreak             " 在单词中间断行
 " 会显示出来 
 set showcmd
 set wrap                    " 自动换行显示 
-"CmdLine settings {{{
+
 set cmdheight=1             " 设定命令行的行数为 1
 set laststatus=2               " 显示状态栏 (默认值为 1, 无法显示状态栏)
 set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%%\ \ \ [\ %L\ lines\ in\ all\ ]
@@ -73,8 +66,7 @@ set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%
                             " %p    当前行占总行数的百分比
                             " %%    百分号
                             " %L    当前文件总行数
-"CmdLine settings End }}} 
-"
+
 "显示匹配括号
 set showmatch
 
