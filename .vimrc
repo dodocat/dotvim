@@ -27,6 +27,7 @@ Bundle "scrooloose/syntastic"
 let g:rainbow_active = 1 
 let g:rainbow_operators = 1 
 
+
 "包含其它文件
 ""快捷键设定文件 
 source $HOME/.vim/rcfile/mappings.vim
@@ -38,10 +39,10 @@ source $HOME/.vim/rcfile/function.vim
 source $HOME/.vim/rcfile/fileheader.vim
 
 "默认为缩进折叠
-set foldmethod=indent
-set foldcolumn=3 "设置折叠区域的宽度
-set foldenable
-nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+"" set foldmethod=indent
+"" set foldcolumn=3 "设置折叠区域的宽度
+"" set foldenable
+"" nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 "Tlist 和 wm的设置
 "命令模式输入wm打开Tlist和WM
@@ -138,4 +139,7 @@ if has("cscope")
    endif
    set csverb
 endif
+
+imap <C-J> <Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
 
