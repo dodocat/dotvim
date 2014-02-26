@@ -21,7 +21,7 @@ Bundle "Valloric/YouCompleteMe"
 Bundle "Rainbow-Parentheses-Improved-and2"
 Bundle "groovy.vim"
 Bundle "tfnico/vim-gradle"
-
+Bundle "scrooloose/syntastic"
 ""激活 Rainbow Parentheses
 """" colorfull ((((()))))
 let g:rainbow_active = 1 
