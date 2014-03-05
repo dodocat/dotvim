@@ -22,6 +22,7 @@ Bundle "Rainbow-Parentheses-Improved-and2"
 Bundle "groovy.vim"
 Bundle "tfnico/vim-gradle"
 Bundle "scrooloose/syntastic"
+Bundle "Lokaltog/vim-powerline"
 ""激活 Rainbow Parentheses
 """" colorfull ((((()))))
 let g:rainbow_active = 1 
@@ -139,7 +140,7 @@ if has("cscope")
    endif
    set csverb
 endif
-
+" snipMate mapping
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 
