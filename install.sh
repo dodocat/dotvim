@@ -7,3 +7,7 @@
 
 cdir=pwd
 ln -s $cdir/.vimrc ~/.vimrc
+git submodule update --init --recursive
+cd ./bundle/YouCompleteMe/
+./install.sh
+
