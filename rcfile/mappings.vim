@@ -2,19 +2,7 @@
 "Descripe : 快捷键绑定设置
 
 "加上日期 对应F2
-"":map <F2> gg:read !date<CR>
-
-"------------------------------------------------
-"括号自动补全
-"------------------------------------------------
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {}<ESC>i
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap ' ''<ESC>i
-:inoremap " ""<ESC>i
+"" :map <F2> gg:read !date<CR>
 
 :inoremap jj <Esc>
 

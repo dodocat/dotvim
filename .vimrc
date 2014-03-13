@@ -15,7 +15,7 @@ Bundle "peterhoeg/vim-qml"
 Bundle "vim-scripts/Visual-Mark"
 Bundle "vim-scripts/sketch.vim"
 Bundle "vim-scripts/a.vim"
-Bundle "hallison/vim-markdown"
+""Bundle 'hallison/vim-markdown'
 Bundle "altercation/vim-colors-solarized"
 Bundle "Valloric/YouCompleteMe"
 Bundle "Rainbow-Parentheses-Improved-and2"
@@ -23,6 +23,8 @@ Bundle "groovy.vim"
 Bundle "tfnico/vim-gradle"
 Bundle "scrooloose/syntastic"
 Bundle "Lokaltog/vim-powerline"
+Bundle 'junegunn/vim-easy-align'
+Bundle 'plasticboy/vim-markdown'
 ""激活 Rainbow Parentheses
 """" colorfull ((((()))))
 let g:rainbow_active = 1 
@@ -144,3 +146,9 @@ endif
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 
+
+" EasyAlign
+" " Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+" " Start interactive EasyAlign with a Vim movement
+nmap <Leader>a <Plug>(EasyAlign)
